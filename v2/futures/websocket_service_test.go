@@ -511,8 +511,8 @@ func (s *websocketServiceTestSuite) TestWsCombinedKlineServe() {
 	s.mockWsServe(data, errors.New(fakeErrMsg))
 	defer s.assertWsServe()
 
-	input := map[string]string{
-		"ETHBTC": "1m",
+	input := []map[string]string{
+		{"ETHBTC": "1m"},
 	}
 	doneC, stopC, err := WsCombinedKlineServe(input, func(event *WsKlineEvent) {
 		e := &WsKlineEvent{
