@@ -14,7 +14,7 @@ import (
 	"os"
 	"time"
 
-	"git.lc-technology.top/aggregate/serv/binance.git/common"
+	"binance/common"
 	"github.com/bitly/go-simplejson"
 )
 

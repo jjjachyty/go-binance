@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"git.lc-technology.top/aggregate/serv/binance.git/common"
+	"binance/common"
 	"github.com/stretchr/testify/suite"
 )
 

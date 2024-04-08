@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"git.lc-technology.top/aggregate/serv/binance.git/common"
+	"binance/common"
 )
 
 // PremiumIndexService get premium index

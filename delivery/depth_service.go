@@ -1,6 +1,6 @@
 package delivery
 
-import "git.lc-technology.top/aggregate/serv/binance.git/common"
+import "binance/common"
 
 // Ask is a type alias for PriceLevel.
 type Ask = common.PriceLevel

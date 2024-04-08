@@ -40,7 +40,7 @@ go get github.com/jjjachyty/go-binance/v1
 
 ```golang
 import (
-    "git.lc-technology.top/aggregate/serv/binance.git"
+    "binance"
 )
 ```
 
@@ -322,7 +322,7 @@ Use the `binance.UseTestnet` flag before calling the client creation and the web
 
 ```go
 import (
-    "git.lc-technology.top/aggregate/serv/binance.git"
+    "binance"
 )
 
 binance.UseTestnet = true
@@ -335,7 +335,7 @@ Use the `futures.UseTestnet` flag before calling the client creation and the web
 
 ```go
 import (
-    "git.lc-technology.top/aggregate/serv/binance.git/futures"
+    "binance/futures"
 )
 
 futures.UseTestnet = true
@@ -348,7 +348,7 @@ Use the `delivery.UseTestnet` flag before calling the client creation and the we
 
 ```go
 import (
-    "git.lc-technology.top/aggregate/serv/binance.git/delivery"
+    "binance/delivery"
 )
 
 delivery.UseTestnet = true

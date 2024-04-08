@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"git.lc-technology.top/aggregate/serv/binance.git/common"
+	"binance/common"
 )
 
 // DepthService show depth info
