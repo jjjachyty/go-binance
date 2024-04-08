@@ -1,4 +1,4 @@
-module binance
+module github.com/jjjachyty/go-binance
 
 go 1.21.4
 

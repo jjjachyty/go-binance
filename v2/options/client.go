@@ -209,9 +209,9 @@ func NewClient(apiKey, secretKey string) *Client {
 		APIKey:     apiKey,
 		SecretKey:  secretKey,
 		BaseURL:    getApiEndpoint(),
-		UserAgent:  "Binance/golang",
+		UserAgent:  "github.com/jjjachyty/go-binance/golang",
 		HTTPClient: http.DefaultClient,
-		Logger:     log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
+		Logger:     log.New(os.Stderr, "github.com/jjjachyty/go-binance-golang ", log.LstdFlags),
 	}
 }
 
@@ -229,11 +229,11 @@ func NewProxiedClient(apiKey, secretKey, proxyUrl string) *Client {
 		APIKey:    apiKey,
 		SecretKey: secretKey,
 		BaseURL:   getApiEndpoint(),
-		UserAgent: "Binance/golang",
+		UserAgent: "github.com/jjjachyty/go-binance/golang",
 		HTTPClient: &http.Client{
 			Transport: tr,
 		},
-		Logger: log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
+		Logger: log.New(os.Stderr, "github.com/jjjachyty/go-binance-golang ", log.LstdFlags),
 	}
 }
 

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"binance/common"
+	"github.com/jjjachyty/go-binance/common"
 	"github.com/stretchr/testify/suite"
 )
 

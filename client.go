@@ -17,10 +17,10 @@ import (
 	"github.com/bitly/go-simplejson"
 	jsoniter "github.com/json-iterator/go"
 
-	"binance/common"
-	"binance/delivery"
-	"binance/futures"
-	"binance/options"
+	"github.com/jjjachyty/go-binance/common"
+	"github.com/jjjachyty/go-binance/delivery"
+	"github.com/jjjachyty/go-binance/futures"
+	"github.com/jjjachyty/go-binance/options"
 )
 
 // SideType define side type of order
@@ -274,9 +274,9 @@ func NewClient(apiKey, secretKey string) *Client {
 		APIKey:     apiKey,
 		SecretKey:  secretKey,
 		BaseURL:    getAPIEndpoint(),
-		UserAgent:  "Binance/golang",
+		UserAgent:  "github.com/jjjachyty/go-binance/golang",
 		HTTPClient: http.DefaultClient,
-		Logger:     log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
+		Logger:     log.New(os.Stderr, "github.com/jjjachyty/go-binance-golang ", log.LstdFlags),
 	}
 }
 
@@ -294,11 +294,11 @@ func NewProxiedClient(apiKey, secretKey, proxyUrl string) *Client {
 		APIKey:    apiKey,
 		SecretKey: secretKey,
 		BaseURL:   getAPIEndpoint(),
-		UserAgent: "Binance/golang",
+		UserAgent: "github.com/jjjachyty/go-binance/golang",
 		HTTPClient: &http.Client{
 			Transport: tr,
 		},
-		Logger: log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
+		Logger: log.New(os.Stderr, "github.com/jjjachyty/go-binance-golang ", log.LstdFlags),
 	}
 }
 

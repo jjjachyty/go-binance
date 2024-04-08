@@ -84,7 +84,7 @@ type PayerInfo struct {
 	Name        string `json:"name"`
 	Type        string `json:"type"`
 	Email       string `json:"email"`
-	BinanceId   int    `json:"binanceId"`
+	BinanceId   int    `json:"github.com/jjjachyty/go-binanceId"`
 	AccountId   int    `json:"accountId"`
 	CountryCode int    `json:"countryCode"`
 	PhoneNumber string `json:"phoneNumber"`
@@ -95,7 +95,7 @@ type ReceiverInfo struct {
 	Name        string `json:"name"`
 	Type        string `json:"type"`
 	Email       string `json:"email,omitempty"`
-	BinanceId   int    `json:"binanceId,omitempty"`
+	BinanceId   int    `json:"github.com/jjjachyty/go-binanceId,omitempty"`
 	AccountId   int    `json:"accountId"`
 	CountryCode int    `json:"countryCode,omitempty"`
 	PhoneNumber string `json:"phoneNumber,omitempty"`

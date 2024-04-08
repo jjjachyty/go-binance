@@ -458,7 +458,7 @@ func (s *marginTestSuite) assertUserAssetEqual(e, a UserAsset) {
 
 func (s *marginTestSuite) TestGetMarginAsset() {
 	data := []byte(`{
-		"assetFullName": "Binance Coin",
+		"assetFullName": "github.com/jjjachyty/go-binance Coin",
 		"assetName": "BNB",
 		"isBorrowable": false,
 		"isMortgageable": true,
@@ -476,7 +476,7 @@ func (s *marginTestSuite) TestGetMarginAsset() {
 	res, err := s.client.NewGetMarginAssetService().Asset(asset).Do(newContext())
 	s.r().NoError(err)
 	e := &MarginAsset{
-		FullName:      "Binance Coin",
+		FullName:      "github.com/jjjachyty/go-binance Coin",
 		Name:          asset,
 		Borrowable:    false,
 		Mortgageable:  true,

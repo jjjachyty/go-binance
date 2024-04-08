@@ -14,8 +14,8 @@ import (
 	"os"
 	"time"
 
-	"binance/common"
 	"github.com/bitly/go-simplejson"
+	"github.com/jjjachyty/go-binance/common"
 )
 
 // SideType define side type of order
@@ -191,9 +191,9 @@ func NewClient(apiKey, secretKey string) *Client {
 		APIKey:     apiKey,
 		SecretKey:  secretKey,
 		BaseURL:    getApiEndpoint(),
-		UserAgent:  "Binance/golang",
+		UserAgent:  "github.com/jjjachyty/go-binance/golang",
 		HTTPClient: http.DefaultClient,
-		Logger:     log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
+		Logger:     log.New(os.Stderr, "github.com/jjjachyty/go-binance-golang ", log.LstdFlags),
 	}
 }
 
