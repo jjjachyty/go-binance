@@ -27,7 +27,7 @@ Name | Description | Status
 ### Installation
 
 ```shell
-go get github.com/jjjachyty/go-binance/v2
+go get git.lc-technology.top/aggregate/serv/binance.git
 ```
 
 For v1 API, it has been moved to `v1` branch, please use:
@@ -40,7 +40,7 @@ go get github.com/jjjachyty/go-binance/v1
 
 ```golang
 import (
-    "github.com/jjjachyty/go-binance/v2"
+    "git.lc-technology.top/aggregate/serv/binance.git"
 )
 ```
 
@@ -322,7 +322,7 @@ Use the `binance.UseTestnet` flag before calling the client creation and the web
 
 ```go
 import (
-    "github.com/jjjachyty/go-binance/v2"
+    "git.lc-technology.top/aggregate/serv/binance.git"
 )
 
 binance.UseTestnet = true
@@ -335,7 +335,7 @@ Use the `futures.UseTestnet` flag before calling the client creation and the web
 
 ```go
 import (
-    "github.com/jjjachyty/go-binance/v2/futures"
+    "git.lc-technology.top/aggregate/serv/binance.git/futures"
 )
 
 futures.UseTestnet = true
@@ -348,7 +348,7 @@ Use the `delivery.UseTestnet` flag before calling the client creation and the we
 
 ```go
 import (
-    "github.com/jjjachyty/go-binance/v2/delivery"
+    "git.lc-technology.top/aggregate/serv/binance.git/delivery"
 )
 
 delivery.UseTestnet = true
